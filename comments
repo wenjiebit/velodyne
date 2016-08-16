@@ -4,3 +4,5 @@
   <arg name="min_range" default="0.9" />
   <arg name="max_range" default="130.0" />
 同时，需要velodyne/velodyne_pointcloud/launch/cloud_nodelet.launch中设置最小range和最大range,min_range太小时候回出现固定障碍物，是雷达的自身特性。
+
+驱动包需要根据雷达应用类型设置Packet-bag大小以及雷达帧率：velodyne/velodyne_driver/src/driver/driver.cc
