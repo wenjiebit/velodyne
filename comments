@@ -1,1 +1,3 @@
 这是16线，32线，64线激光雷达驱动程序，可在catkin工作空间直接编译，但是需要修改几个参数，而且需要一个标定文件：
+
+同时，需要velodyne/velodyne_pointcloud/launch/cloud_nodelet.launch中设置最小range和最大range,min_range太小时候回出现固定障碍物，是雷达的自身特性。
